@@ -99,7 +99,7 @@ export default function ProjectDetail() {
         <div style={{ width: 'min(1160px, calc(100% - 48px))', margin: '0 auto' }}>
           {project.image ? (
             <img
-              src={project.image}
+              src={import.meta.env.BASE_URL + project.image.slice(1)}
               alt={`${project.name} 미리보기`}
               style={{
                 width: '100%', aspectRatio: '16 / 9',
