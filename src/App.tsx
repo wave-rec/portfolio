@@ -29,6 +29,6 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
